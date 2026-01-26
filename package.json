@@ -1,0 +1,19 @@
+{
+  "name": "blackwood-mebel-site",
+  "version": "1.0.0",
+  "description": "Сайт-визитка BLACKWOOD - Мебель на заказ в Ташкенте",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx http-server . -p 3000 -o"
+  },
+  "keywords": [
+    "мебель",
+    "ташкент",
+    "blackwood"
+  ],
+  "author": "BLACKWOOD",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}

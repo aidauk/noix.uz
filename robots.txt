@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blackwood.uz/sitemap.xml
+
+# Запретить индексацию служебных файлов
+Disallow: /server.js
+Disallow: /start-server.bat
+Disallow: /*.json$

@@ -1,0 +1,29 @@
+# Игнорируемые файлы для Git
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Временные файлы
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Локальные настройки
+.env
+.env.local
+
+# Файлы сервера (опционально, если не нужны в репозитории)
+server.js
+start-server.bat
