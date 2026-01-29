@@ -45,6 +45,21 @@ body {
   flex-wrap: wrap;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 20px;
+  z-index: 1002;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .header-nav {
   display: flex;
   gap: 30px;
@@ -1029,6 +1044,19 @@ body {
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
+  }
+
+  .header-logo {
+    margin-right: 0;
+    order: 1;
+  }
+
+  .burger-menu {
+    order: 2;
+  }
+
+  .logo-img {
+    height: 40px;
   }
 
   .header-row {
