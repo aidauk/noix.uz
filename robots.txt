@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://blackwood.uz/sitemap.xml
+Sitemap: https://noix.uz/sitemap.xml
 
 # Запретить индексацию служебных файлов
 Disallow: /server.js

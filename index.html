@@ -13,23 +13,23 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="Russian">
   <meta name="revisit-after" content="7 days">
-  <link rel="canonical" href="https://blackwood.uz/">
+  <link rel="canonical" href="https://noix.uz/">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://blackwood.uz/">
+  <meta property="og:url" content="https://noix.uz/">
   <meta property="og:title" content="Мебель на заказ в Ташкенте | BLACKWOOD">
   <meta property="og:description" content="Изготовление мебели на заказ в Ташкенте. Кухни, шкафы, гардеробные, прихожие и спальни по индивидуальным размерам. Бесплатный замер, гарантия 3 года.">
-  <meta property="og:image" content="https://blackwood.uz/Images/kuhni.png">
+  <meta property="og:image" content="https://noix.uz/Images/kuhni.png">
   <meta property="og:locale" content="ru_UZ">
   <meta property="og:site_name" content="BLACKWOOD - Мебель на заказ">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://blackwood.uz/">
+  <meta property="twitter:url" content="https://noix.uz/">
   <meta property="twitter:title" content="Мебель на заказ в Ташкенте | BLACKWOOD">
   <meta property="twitter:description" content="Изготовление мебели на заказ в Ташкенте. Кухни, шкафы, гардеробные, прихожие и спальни по индивидуальным размерам.">
-  <meta property="twitter:image" content="https://blackwood.uz/Images/kuhni.png">
+  <meta property="twitter:image" content="https://noix.uz/Images/kuhni.png">
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -47,7 +47,7 @@
     "@type": "LocalBusiness",
     "name": "BLACKWOOD",
     "description": "Изготовление мебели на заказ в Ташкенте. Кухни, шкафы, гардеробные, прихожие и спальни по индивидуальным размерам.",
-    "url": "https://blackwood.uz/",
+    "url": "https://noix.uz/",
     "telephone": "+998911333263",
     "address": {
       "@type": "PostalAddress",
@@ -74,9 +74,9 @@
       "closes": "23:59"
     },
     "priceRange": "$$",
-    "image": "https://blackwood.uz/Images/kuhni.png",
+    "image": "https://noix.uz/Images/kuhni.png",
     "sameAs": [
-      "https://t.me/mebel_blackwood",
+      "https://t.me/blackwood_uz",
       "https://www.instagram.com/noix.uz/"
     ],
     "areaServed": {
@@ -133,14 +133,19 @@
 <!-- HEADER -->
 <header class="header" itemscope itemtype="https://schema.org/WPHeader">
   <div class="container header-row">
-    <nav class="header-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="header-nav" id="headerNav" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <a href="#about" itemprop="url"><span itemprop="name">О компании</span></a>
       <a href="#services" itemprop="url"><span itemprop="name">Услуги</span></a>
       <a href="#contacts" itemprop="url"><span itemprop="name">Контакты</span></a>
     </nav>
-    <div class="header-contacts">
+    <div class="header-contacts" id="headerContacts">
       <a href="tel:+998911333263" class="phone">+998 91 133 32 63</a>
-      <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-header">Заказать мастера 24/7</a>
+      <a href="https://t.me/blackwood_uz" target="_blank" class="btn-header">Заказать мастера 24/7</a>
     </div>
   </div>
 </header>
@@ -163,22 +168,7 @@
       
       <p class="hero-cta">Закажите мастера прямо сейчас и получите скидку 20% на все виды услуг!</p>
       <p class="hero-time">Будем у Вас через 30 минут!</p>
-      <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-hero">Вызвать мастера на дом</a>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURES SCROLL -->
-<section class="features-scroll">
-  <div class="features-scroll-wrapper">
-    <div class="features-scroll-content">
-      Бесплатный выезд за 30 минут • Обеспечиваем расходными материалами • Всегда есть свободный мастер • 
-    </div>
-    <div class="features-scroll-content">
-      Бесплатный выезд за 30 минут • Обеспечиваем расходными материалами • Всегда есть свободный мастер • 
-    </div>
-    <div class="features-scroll-content">
-      Бесплатный выезд за 30 минут • Обеспечиваем расходными материалами • Всегда есть свободный мастер • 
+      <a href="https://t.me/blackwood_uz" target="_blank" class="btn-hero">Вызвать мастера на дом</a>
     </div>
   </div>
 </section>
@@ -186,7 +176,7 @@
 <!-- INTRO -->
 <section class="intro-section">
   <div class="container">
-    <h2>🪑 МЕБЕЛЬ НА ЗАКАЗ</h2>
+    <h2>МЕБЕЛЬ НА ЗАКАЗ</h2>
     <div class="intro-content">
       <h3>Мебель на заказ по индивидуальным размерам</h3>
       <p>Проектируем и изготавливаем мебель с учётом планировки, стиля интерьера и ваших пожеланий. Работаем с вниманием к деталям — от замера до установки.</p>
@@ -197,7 +187,7 @@
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="container">
-    <h2>🔹 Что мы изготавливаем<br><span class="services-subtitle">Кухни, шкафы, гардеробные, прихожие и спальни</span></h2>
+    <h2>Что мы изготавливаем<br><span class="services-subtitle">Кухни, шкафы, гардеробные, прихожие и спальни</span></h2>
     
     <div class="services-info">
       <p><strong>Каждый проект:</strong></p>
@@ -214,7 +204,6 @@
         <div class="image-wrapper" onclick="openModal('Images/kuhni.png')">
           <img src="Images/kuhni.png" alt="Кухни на заказ в Ташкенте - индивидуальное изготовление кухонной мебели" class="service-image">
         </div>
-        <div class="service-emoji">🍽</div>
         <h3>Кухни на заказ</h3>
         <p>Индивидуальные кухни с продуманной эргономикой и качественными материалами.</p>
         <div class="service-details">
@@ -226,8 +215,8 @@
           </ul>
         </div>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
 
@@ -235,13 +224,12 @@
         <div class="image-wrapper" onclick="openModal('Images/garderob.png')">
           <img src="Images/garderob.png" alt="Гардеробные на заказ в Ташкенте - системы хранения под заказ" class="service-image">
         </div>
-        <div class="service-emoji">👔</div>
         <h3>Гардеробные</h3>
         <p>Эстетичные системы хранения, созданные под ваш образ жизни.</p>
         <p class="service-note">Гардеробные и шкафы проектируются с учётом ваших привычек и потребностей.</p>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
 
@@ -249,13 +237,12 @@
         <div class="image-wrapper" onclick="openModal('Images/shkaf.jpg')">
           <img src="Images/shkaf.jpg" alt="Шкафы и шкафы-купе на заказ в Ташкенте - изготовление по индивидуальным размерам" class="service-image">
         </div>
-        <div class="service-emoji">🚪</div>
         <h3>Шкафы на заказ</h3>
         <p>Функциональные шкафы и шкафы-купе с точной подгонкой под пространство.</p>
         <p class="service-note">Точная подгонка под ниши, углы и нестандартные размеры.</p>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
 
@@ -263,12 +250,11 @@
         <div class="image-wrapper" onclick="openModal('Images/prihojka.png')">
           <img src="Images/prihojka.png" alt="Прихожие на заказ в Ташкенте - мебель для прихожей под заказ" class="service-image">
         </div>
-        <div class="service-emoji">🧥</div>
         <h3>Прихожие</h3>
         <p>Стильные и практичные решения для комфортного начала дня.</p>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
 
@@ -276,13 +262,12 @@
         <div class="image-wrapper" onclick="openModal('Images/spalna.png')">
           <img src="Images/spalna.png" alt="Спальни на заказ в Ташкенте - мебель для спальни по индивидуальным размерам" class="service-image">
         </div>
-        <div class="service-emoji">🛏</div>
         <h3>Спальни</h3>
         <p>Мебель для спальни, где комфорт сочетается с дизайном.</p>
         <p class="service-note">Спокойный дизайн, удобство и единый стиль. Мебель, которая не отвлекает, а дополняет интерьер.</p>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
 
@@ -290,13 +275,12 @@
         <div class="image-wrapper" onclick="openModal('Images/detskaya.jpg')">
           <img src="Images/detskaya.jpg" alt="Детская мебель на заказ в Ташкенте - кровати, рабочие зоны и системы хранения" class="service-image">
         </div>
-        <div class="service-emoji">🪑</div>
         <h3>Детская мебель</h3>
         <p>Индивидуальные решения для детских комнат: кровати, рабочие зоны и системы хранения.</p>
         <p class="service-note">Реализуем нестандартные проекты под конкретное пространство.</p>
         <div class="service-buttons">
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service">Вызвать мастера</a>
-          <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-service-link">Расчет в Telegram</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service">Вызвать мастера</a>
+          <a href="https://t.me/blackwood_uz" target="_blank" class="btn-service-link">Расчет в Telegram</a>
         </div>
       </div>
     </div>
@@ -382,7 +366,7 @@
     <h2>ЮРИДИЧЕСКИМ ЛИЦАМ</h2>
     <p>Оказываем услуги для юридических лиц и организаций Ташкента и области по изготовлению мебели, кухонь, шкафов и ремонту мебели — безналичный расчет</p>
     <div class="legal-buttons">
-      <a href="https://t.me/mebel_blackwood" target="_blank" class="btn-legal">Бесплатная Онлайн Консультация</a>
+      <a href="https://t.me/blackwood_uz" target="_blank" class="btn-legal">Бесплатная Онлайн Консультация</a>
     </div>
   </div>
 </section>
@@ -390,7 +374,7 @@
 <!-- HOW WE WORK -->
 <section class="how-we-work">
   <div class="container">
-    <h2>🔹 Как мы работаем</h2>
+    <h2>Как мы работаем</h2>
     <div class="work-steps">
       <div class="work-step">
         <div class="step-number">1</div>
@@ -420,7 +404,7 @@
 <!-- WHY CHOOSE US -->
 <section class="why-choose-us">
   <div class="container">
-    <h2>🔹 Почему выбирают нас</h2>
+    <h2>Почему выбирают нас</h2>
     <div class="why-grid">
       <div class="why-item">
         <div class="why-icon">✓</div>
@@ -537,7 +521,7 @@
       </div>
       <div class="contact-item">
         <strong>Telegram:</strong>
-        <a href="https://t.me/mebel_blackwood" target="_blank">@mebel_blackwood</a>
+        <a href="https://t.me/blackwood_uz" target="_blank">@blackwood_uz</a>
       </div>
       <div class="contact-item">
         <strong>Instagram:</strong>
@@ -556,7 +540,7 @@
 
 <!-- FLOATING -->
 <div class="floating">
-  <a href="https://t.me/mebel_blackwood" target="_blank" class="tg">
+  <a href="https://t.me/blackwood_uz" target="_blank" class="tg">
     <img src="icons/telegram.svg" alt="Telegram" class="icon-img">
   </a>
   <a href="https://www.instagram.com/noix.uz/" target="_blank" class="ig">
@@ -609,6 +593,28 @@ document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
     closeModal();
   }
+});
+
+// Burger Menu
+const burgerMenu = document.getElementById('burgerMenu');
+const headerNav = document.getElementById('headerNav');
+const headerContacts = document.getElementById('headerContacts');
+
+burgerMenu.addEventListener('click', function() {
+  this.classList.toggle('active');
+  headerNav.classList.toggle('active');
+  headerContacts.classList.toggle('active');
+  document.body.style.overflow = this.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+// Close menu when clicking on a link
+headerNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function() {
+    burgerMenu.classList.remove('active');
+    headerNav.classList.remove('active');
+    headerContacts.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  });
 });
 </script>
 

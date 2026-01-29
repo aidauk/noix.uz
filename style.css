@@ -4,9 +4,21 @@
   padding: 0;
 }
 
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --color-primary: #667eea;
+  --color-primary-dark: #4c51bf;
+  --color-text: #222222;
+  --color-muted: #666666;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --shadow-soft: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #222;
+  color: var(--color-text);
   line-height: 1.6;
 }
 
@@ -19,7 +31,7 @@ body {
 /* HEADER */
 .header {
   background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-soft);
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -46,7 +58,7 @@ body {
 }
 
 .header-nav a:hover {
-  color: #007bff;
+  color: var(--color-primary);
 }
 
 .header-contacts {
@@ -62,18 +74,66 @@ body {
   font-size: 18px;
 }
 
-.btn-header {
-  background: #28a745;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
+/* BURGER MENU */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  position: relative;
 }
 
-.btn-header:hover {
-  background: #218838;
+.burger-menu span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.burger-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* BUTTONS – единый стиль для всех основных CTA */
+.btn-header,
+.btn-hero,
+.btn-service,
+.btn-legal {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(102,126,234,0.35);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-header:hover,
+.btn-hero:hover,
+.btn-service:hover,
+.btn-legal:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(102,126,234,0.45);
 }
 
 /* HERO */
@@ -121,20 +181,8 @@ body {
 }
 
 .btn-hero {
-  display: inline-block;
-  background: #fff;
-  color: #667eea;
-  padding: 15px 40px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
   margin: 20px 0;
-  transition: transform 0.3s;
-}
-
-.btn-hero:hover {
-  transform: translateY(-2px);
+  font-size: 18px;
 }
 
 .hero-note {
@@ -176,38 +224,6 @@ body {
 .hero-time {
   font-size: 18px;
   margin-bottom: 20px;
-}
-
-/* FEATURES SCROLL */
-.features-scroll {
-  background: #28a745;
-  color: #fff;
-  padding: 15px 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.features-scroll-wrapper {
-  display: flex;
-  width: max-content;
-  animation: scroll 25s linear infinite;
-}
-
-.features-scroll-content {
-  white-space: nowrap;
-  font-weight: 600;
-  font-size: 16px;
-  padding-right: 100px;
-  flex-shrink: 0;
-}
-
-@keyframes scroll {
-  0% { 
-    transform: translateX(0); 
-  }
-  100% { 
-    transform: translateX(calc(-100% / 3)); 
-  }
 }
 
 /* INTRO SECTION */
@@ -266,9 +282,9 @@ body {
   max-width: 800px;
   margin: 30px auto 50px;
   text-align: left;
-  background: #f8f9fa;
+  background: var(--color-bg-alt);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
 }
 
 .services-info p {
@@ -287,7 +303,7 @@ body {
   padding: 8px 0;
   padding-left: 25px;
   position: relative;
-  color: #666;
+  color: var(--color-muted);
   font-size: 16px;
 }
 
@@ -295,7 +311,7 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: #28a745;
+  color: var(--color-primary);
   font-weight: bold;
   font-size: 20px;
 }
@@ -333,8 +349,8 @@ body {
 .service-card {
   background: #fff;
   padding: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
   transition: transform 0.3s;
   overflow: hidden;
 }
@@ -357,7 +373,7 @@ body {
 .service-price {
   font-size: 24px;
   font-weight: 700;
-  color: #28a745;
+  color: var(--color-primary);
   margin-bottom: 15px;
   padding: 20px 30px 0 30px;
 }
@@ -401,14 +417,14 @@ body {
   padding: 5px 0;
   padding-left: 20px;
   position: relative;
-  color: #666;
+  color: var(--color-muted);
 }
 
 .service-details li:before {
   content: "—";
   position: absolute;
   left: 0;
-  color: #28a745;
+  color: var(--color-primary);
 }
 
 .service-note {
@@ -430,7 +446,7 @@ body {
 }
 
 .service-card p {
-  color: #666;
+  color: var(--color-muted);
   margin-bottom: 20px;
   line-height: 1.6;
   padding: 0 30px;
@@ -459,7 +475,7 @@ body {
 }
 
 .btn-service-link {
-  color: #007bff;
+  color: var(--color-primary);
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -1011,14 +1027,63 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
   .header-row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-nav,
+  .header-contacts {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
     flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
     gap: 15px;
   }
 
   .header-nav {
-    flex-direction: column;
-    gap: 10px;
+    top: 60px;
+  }
+
+  .header-contacts {
+    top: 200px;
+    align-items: stretch;
+  }
+
+  .header-nav.active,
+  .header-contacts.active {
+    transform: translateX(0);
+  }
+
+  .header-nav a {
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .header-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .header-contacts .phone {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .btn-header {
+    width: 100%;
     text-align: center;
   }
 
@@ -1040,9 +1105,5 @@ body {
   .work-steps,
   .trust-grid {
     grid-template-columns: 1fr;
-  }
-
-  .features-scroll-content {
-    font-size: 14px;
   }
 }
