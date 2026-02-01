@@ -7,8 +7,8 @@
 :root {
   --color-bg: #ffffff;
   --color-bg-alt: #f8f9fa;
-  --color-primary: #667eea;
-  --color-primary-dark: #4c51bf;
+  --color-primary: #ffc11e;
+  --color-primary-dark: #e6a800;
   --color-text: #222222;
   --color-muted: #666666;
   --radius-sm: 5px;
@@ -54,10 +54,18 @@ body {
 }
 
 .logo-img {
-  height: 70px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   display: block;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 900;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: -0.5px;
 }
 
 .header-nav {
@@ -138,7 +146,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  box-shadow: 0 10px 25px rgba(102,126,234,0.35);
+  box-shadow: 0 10px 25px rgba(255,193,30,0.35);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -148,12 +156,12 @@ body {
 .btn-legal:hover {
   background: var(--color-primary-dark);
   transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(102,126,234,0.45);
+  box-shadow: 0 14px 30px rgba(255,193,30,0.45);
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffc11e 0%, #e6a800 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,18 +193,19 @@ body {
 
 .hero h1 {
   font-size: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-weight: 700;
 }
 
 .hero-subtitle {
+  visibility: hidden;
   font-size: 24px;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
 .btn-hero {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   font-size: 18px;
 }
 
@@ -219,6 +228,7 @@ body {
 }
 
 .hero-types {
+  visibility: hidden;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -231,35 +241,40 @@ body {
 }
 
 .hero-cta {
+  visibility: hidden;
   font-size: 20px;
   margin: 30px 0 10px;
   font-weight: 600;
 }
 
 .hero-time {
+  visibility: hidden;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 /* INTRO SECTION */
 .intro-section {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #fff;
   text-align: center;
 }
 
 .intro-section h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 0;
   color: #333;
 }
 
 .intro-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .intro-content h3 {
+  display: none;
   font-size: 28px;
   margin-bottom: 20px;
   color: #333;
@@ -268,20 +283,46 @@ body {
 .intro-content p {
   font-size: 18px;
   color: #666;
-  line-height: 1.8;
-  margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-content ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 10px auto;
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+.intro-content li {
+  margin-bottom: 5px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #666;
+}
+
+.intro-content li:last-child {
+  margin-bottom: 0;
 }
 
 /* SERVICES */
 .services {
-  padding: 80px 0;
+  padding: 20px 0;
   background: #f8f9fa;
+  text-align: center;
 }
 
 .services h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 15px;
+  margin-top: 0;
   color: #333;
 }
 
@@ -475,7 +516,7 @@ body {
 }
 
 .btn-service {
-  background: #28a745;
+  background: #ffc11e;
   color: #fff;
   padding: 12px 20px;
   border-radius: 5px;
@@ -486,18 +527,27 @@ body {
 }
 
 .btn-service:hover {
-  background: #218838;
+  background: #e6a800;
 }
 
 .btn-service-link {
-  color: var(--color-primary);
+  color: #ffc11e;
+  background: transparent;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffc11e;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;
 }
 
 .btn-service-link:hover {
-  text-decoration: underline;
+  background: #ffc11e;
+  color: #fff;
+  border-color: #ffc11e;
+  text-decoration: none;
 }
 
 /* GALLERY */
@@ -566,7 +616,7 @@ body {
 .about-number {
   font-size: 48px;
   font-weight: 700;
-  color: #667eea;
+  color: #ffc11e;
   margin-bottom: 15px;
 }
 
@@ -612,7 +662,7 @@ body {
 }
 
 .btn-legal {
-  background: #007bff;
+  background: #ffc11e;
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
@@ -622,7 +672,7 @@ body {
 }
 
 .btn-legal:hover {
-  background: #0056b3;
+  background: #e6a800;
 }
 
 /* HOW WE WORK */
@@ -652,7 +702,7 @@ body {
 .step-number {
   width: 60px;
   height: 60px;
-  background: #667eea;
+  background: #ffc11e;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -684,14 +734,15 @@ body {
 
 /* WHY CHOOSE US */
 .why-choose-us {
-  padding: 80px 0 30px 0;
+  padding: 20px 0;
   background: #f8f9fa;
 }
 
 .why-choose-us h2 {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  margin-top: 0;
   color: #333;
 }
 
@@ -861,7 +912,7 @@ body {
 
 .faq-question span {
   font-size: 24px;
-  color: #667eea;
+  color: #ffc11e;
 }
 
 .faq-answer {
@@ -1100,10 +1151,10 @@ body {
 
 /* FLOATING */
 .floating {
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 20px;
-  display: flex;
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
@@ -1170,6 +1221,10 @@ body {
     height: 40px;
   }
 
+  .logo-text {
+    font-size: 20px;
+  }
+
   .header-row {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -1194,10 +1249,14 @@ body {
 
   .header-nav {
     top: 60px;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
   }
 
   .header-contacts {
-    top: 200px;
+    top: auto;
+    margin-top: 20px;
+    padding-top: 20px;
     align-items: stretch;
   }
 
@@ -1218,7 +1277,8 @@ body {
 
   .header-contacts .phone {
     text-align: center;
-    padding: 12px 0;
+    padding: 15px 0 12px 0;
+    margin-top: 10px;
   }
 
   .btn-header {
@@ -1250,21 +1310,41 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 25px;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer-info {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-company {
+    text-align: center;
+  }
+
+  .footer-address {
     text-align: center;
   }
 
   .footer-contacts {
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-phone {
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .footer-social {
     justify-content: center;
+    align-items: center;
   }
 }
