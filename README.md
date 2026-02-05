@@ -1,4 +1,4 @@
-# BLACKWOOD - Мебель на заказ в Ташкенте
+# Noix - Мебель на заказ в Ташкенте
 
 Сайт-визитка для компании по изготовлению мебели на заказ.
 
@@ -82,7 +82,7 @@ DirectoryIndex index.html
 ```nginx
 server {
     listen 80;
-    server_name blackwood.uz;
+    server_name Noix.uz;
     root /path/to/mebel-site;
     index index.html;
 
@@ -121,4 +121,4 @@ server {
 
 ## Лицензия
 
-© 2026 BLACKWOOD — Мебель под заказ в Ташкенте
+© 2026 Noix — Мебель под заказ в Ташкенте
