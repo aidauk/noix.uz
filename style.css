@@ -789,7 +789,7 @@ body {
 
 .why-icon {
   font-size: 48px;
-  color: #28a745;
+  color: var(--color-primary);
   margin-bottom: 20px;
 }
 
